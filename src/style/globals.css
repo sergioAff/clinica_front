@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animationTopToBottom {
+  animation: topToBottom 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.animationBottomToTop {
+  animation: bottomToTop 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@keyframes topToBottom {
+  from {
+    opacity: 0%;
+    transform: translateY(-150px);
+  }
+
+  to {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bottomToTop {
+  from {
+    opacity: 0%;
+    transform: translateY(150px);
+  }
+
+  to {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
